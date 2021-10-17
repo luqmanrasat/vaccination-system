@@ -1,0 +1,63 @@
+# Classes
+- Patient
+  id (auto-generated & unique)
+  contact number
+  age
+  vaccination centre
+  vaccine selected
+
+- Vaccine
+  vaccine code
+  dosage required
+  interval between doses
+  age group
+
+- VaccinationRecord
+  id
+  dose1
+  dose2
+
+# Save/Load
+- Load VC (vaccine-centre.txt)
+- Load vaccines (vaccines.txt)
+- Load patients (patients.txt)
+- Save patient (patients.txt)
+- Load vaccination record(vaccination.txt)
+- Save vaccination record(vaccination.txt)
+
+# Menu
+- prompt user
+- Loop until user exit
+
+1)
+# Patient Registration
+- prompt user
+- Validate inputs
+- check is age eligible
+- check eligible vaccine
+- Create Patient & VaccinationRecord object
+- Save patient & vaccination record data
+
+
+2)
+# Vaccine Administration 
+- prompt user
+- Validate inputs
+- check patient id exist
+- if dosage is taken, break loop
+- if D1 and dosage required is more than 1, print next visit
+- if D2 and dosage required is less than 2, break loop
+- if D2 but D1 is INCOMPLETE, break loop
+- update & save vaccination record
+
+3)
+# Search Record
+- prompt user
+- Validate inputs
+- check patient id exist
+- print vaccination status
+
+4)
+# Statistics
+- Calculate waiting & completed for each VC
+- print result 
